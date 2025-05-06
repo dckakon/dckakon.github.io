@@ -1108,7 +1108,7 @@
             <!-- Footer Social End -->
 
             <!-- Copyright Text Start -->
-            <p class="copyright--text fs--16 ff--primary">Copyright &copy; 2024 <a href="#">Debobrata</a>. All Rights Reserved.</p>
+            <p class="copyright--text fs--16 ff--primary">Copyright &copy;  <span id="year"></span> <a href="#">Debobrata</a>. All Rights Reserved.</p>
             <!-- Copyright Text End -->
         </div>
     </footer>
@@ -1121,7 +1121,9 @@
         <a href="#" class="btn btn-default active"><i class="fa fa-long-arrow-up"></i></a>
     </div>
     <!-- Back To Top Button End -->
-
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <!-- ==== Plugins Bundle ==== -->
     <script src="js/plugins.min.js"></script>
 
